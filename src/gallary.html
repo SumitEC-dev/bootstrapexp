@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyOwnWeb</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+	<!----main navbar---->
+  	<nav class="navbar navbar-dark bg-warning navbar-expand-sm">
+  		<div class="container">
+  			<a href="" class="navbar-brand text-dark ">
+  				<img src="../image/ht.jpeg" width="50" height="30">
+  			 	Sumit Singh Holel And Restaurant</a>
+  			 	<button class="navbar-toggler" data-toggle="collapse" data-target="#uiNavbar">
+                <span class="navbar-toggler-icon"></span>
+            	</button>
+  			 	<div class="collapse navbar-collapse" id="uiNavbar">
+  			 		<ul class="navbar-nav ml-auto">
+  			 			<li class="nav-item active px-2">
+  			 				<a href="../index.html" class="navbar-link text-dark">
+  			 					<i class="fa fa-home text-dark"></i> Home</a>
+  			 			</li>
+  			 			<li class="nav-item px-2">
+  			 				<a href="about.html" class="navbar-link text-dark">
+  			 					<i class="fa fa-id-badge text-dark"></i> About Us</a>
+  			 			</li>
+  			 			<li class="nav-item px-2">
+  			 				<a href="gallary.html" class="navbar-link text-dark">
+  			 					<i class="fa fa-image text-dark"></i> Gallery</a>
+  			 			</li>
+  			 			<li class="nav-item px-2">
+  			 				<a href="contact.html" class="navbar-link text-dark">
+  			 					<i class="fa fa-envelope text-dark"></i> Contact</a>
+  			 			</li>
+  			 		</ul>
+  			 	</div>
+  		</div>
+  	</nav>
+<!-- Gallery Intro -->
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="font-weight-bold text-warning">See OverWiew Of My Hotel</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-3">
+	<div class="container">
+		<table>
+			<tr>
+				<td><img src="../image/gallery1.jpeg" width="350px" height="250px"></td>
+				<td><img src="../image/gallery2.jpeg" width="350px" height="250px"></td>
+				<td><img src="../image/gallery3.jpeg" width="350px" height="250px"></td>
+			</tr>
+			<tr>
+				<td><img src="../image/gallery4.jpeg" width="350px" height="250px"></td>
+				<td><img src="../image/gallery5.jpeg" width="350px" height="250px"></td>
+				<td><img src="../image/gallery6.jpeg" width="350px" height="250px"></td>
+			</tr>
+			<tr>
+				<td><img src="../image/gallery7.jpeg" width="350px" height="250px"></td>
+				<td><img src="../image/gallery8.jpeg" width="350px" height="250px"></td>
+				<td><img src="../image/gallery9.jpeg" width="350px" height="250px"></td>
+			</tr>
+		</table>
+	</div>
+</section>
+<!---Footer section--->
+    <footer class="p-3 bg-warning text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <h3>Copyright © 2021 ,Sumitsingh@</h3>
+            <h6>All Rights Reserved</h6>
+            <h6>Developed & Maintained by Sumit Singh</h6>
+          </div>
+          <div class="col-md-3">
+             <a href="#" class="btn btn-outline-white btn-block" data-toggle="modal" data-target="#contact-modal">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+ <!------contact model----->
+    <div class="modal" id="contact-modal">
+    <div class="modal-dialog">
+        <div class="modal-content animated zoomInUp">
+            <div class="modal-header bg-warning text-white">
+                <h3>Contact Us</h3>
+                <button class="close" data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body bg-light">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="User Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" class="form-control" placeholder="Description"></textarea>
+                    </div>
+                    <input type="submit" value="Contact" class="btn btn-warning">
+                    <a href="#" class="btn btn-warning" data-dismiss="modal">Close</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>   
+</body>
+</html>
